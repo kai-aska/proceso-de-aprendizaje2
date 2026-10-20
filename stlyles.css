@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.cabecera {
+    background-color: #4a3431;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+} 
+
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Empuja el logo a la izquierda y el menú a la derecha */
+    align-items: center; /* Centra verticalmente el logo y los textos */
+    background-color: #513b3b;
+    padding: 15px 30px; /* Aumentamos el padding para que respire mejor dentro de la barra */
+    font-size: 14px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 25px; /* Crea la separación exacta entre Inicio, Nosotros, Productos... */
+    justify-content: flex-end; /* Asegura que el contenido se alinee a la derecha */
+}
+
+.header-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Ajustado para que se lea mejor */
+    padding: 8px 12px;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Efecto opcional para cuando pases el mouse por encima */
+.header-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Crea un sutil fondo claro */
+    border-radius: 4px;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.productos{
+    background-color: rgb(233, 226, 234);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    
+}
+.productos-flex{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 20px;
+
+}
+
+.productos img{
+    width: 100%;
+    height: auto;
+    display: block;
+    height: 250px;
+    object-fit: contain;
+    background-color: white;
+
+}
+
+.nosotros {
+    background-color: bisque;
+    padding-top: 50px;
+    padding-bottom: 90px;
+
+}
+
+.nosotros-flexbox{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+.nosotros-foto{
+    flex: 1;
+
+}
+.nosotros-texto{
+    flex:3;
+}
+
+.boton {
+    display: inline-block;
+    background-color: rgb(230, 233, 235);
+    color: rgb(9, 12, 11);
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.servicios{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 90px;
+
+}
+
+.servicios-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+.servicios img{
+    width: 100%;
+    height: auto;
+    display: block;
+    height: 300px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.contactos{
+    /* background-color:rgb(191, 202, 211);
+    padding-top: 50px;
+    padding-bottom: 75px; */
+    /* display: grid;
+    flex-direction: row;
+    align-items: center; */
+    /* gap: 50px; */
+    /* max-width: 900px; */
+    /* padding: 20px;
+    margin: 0 auto; */
+    /* border: 20px solid white;
+    border-radius: 10px; */
+    background-color: bisque;
+    padding-top: 50px;
+    padding-bottom: 90px;
+
+
+}
+.formulario-principal{
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+.formulario-imagen img{
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+    display:block;
+
+}
+
+/* .formulario-imagen{
+flex: 1;
+width: 50%;
+
+} */
+
+.formulario{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.grupo-campo{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+
+}
+
+
+.pie {
+    background-color: #941f1f;
+    color: aliceblue;
+    text-align: right;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction:row ;
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.footer-logo img{
+    width: 50%;
+    height: auto;
+    display: block;
+
+
+}
+
+.columna-footer{
+    flex: 1;
+
+}
+.creditos{
+    align-self: center;
+    flex-direction: row;
+}
